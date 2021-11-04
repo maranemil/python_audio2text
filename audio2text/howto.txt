@@ -1,0 +1,37 @@
+sudo apt install python3-pip
+sudo apt install gedit
+sudo pip3 install SpeechRecognition pydub
+sudo pip3 install pydub
+sudo pip3 install SpeechRecognition
+
+https://superuser.com/questions/525210/splitting-an-audio-file-into-chunks-of-a-specified-length
+https://www.ffmpeg.org/ffmpeg-formats.html#segment_002c-stream_005fsegment_002c-ssegment
+
+# in seconds
+ffmpeg -i in.mp3 -f segment -segment_time 5 -c copy audio_chunks/frame-%d.wav
+ffmpeg -i in.mp3 -f segment -segment_time 3 -c copy audio_chunks/out%03d.wav
+ffmpeg -i in.mp3 -f segment -segment_time 300 -c copy audio_chunks/out%03d.wav
+ffmpeg -i in.mp3 -f segment -segment_time 30 -c copy audio_chunks/output%09d.wav
+
+600 sec  = 10 min
+300 sec  = 5 min
+
+rm audio_chunks/*.wav
+
+ffmpeg -i ty1_10min_v144P.wav -f segment -segment_time 30 -c copy audio_chunks/out%03d.wav
+
+"""
+https://pypi.org/project/gTTS/
+https://gtts.readthedocs.io/en/latest/
+https://gtts.readthedocs.io/en/latest/module.html
+https://readthedocs.org/projects/gtts/downloads/pdf/latest/
+"""
+
+python3 -m http.server 8888
+
+-----
+
+https://www.sphinx-doc.org/en/master/
+https://docs.readthedocs.io/en/stable/intro/getting-started-with-sphinx.html
+
+

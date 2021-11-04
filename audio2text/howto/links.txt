@@ -1,0 +1,4 @@
+https://modmusicgen.com/
+https://github.com/bjourne/musicgen
+https://openai.com/blog/jukebox/
+https://github.com/openai/jukebox/
