@@ -1,0 +1,4 @@
+Lolo Vibrato
+
+sudo apt install espeak
+cat my_big_book.txt | espeak -s 130 -v mb/mb-fr6 --stdout | ffmpeg -i - -ar 44100 -ac 2 -ab  192k -f my_big_book.mp3
