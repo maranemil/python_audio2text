@@ -2,11 +2,11 @@
 
 # sudo pip3 install bert-extractive-summarizer
 
-#sudo pip3 install spacy
-#sudo pip3 install transformers # > 2.2.0
-#sudo pip3 install neuralcoref
-#sudo pip3 install torch
-#sudo pip3 install torchvision 
+# sudo pip3 install spacy
+# sudo pip3 install transformers # > 2.2.0
+# sudo pip3 install neuralcoref
+# sudo pip3 install torch
+# sudo pip3 install torchvision
 
 # python3 -m spacy download en_core_web_md
 
@@ -122,7 +122,6 @@ The building sold fairly quickly after being publicly placed on the market only 
 The incentive to sell the building at such a huge loss was due to the soaring rent the owners pay to Cooper Union, a New York college, for the land under the building.'
 Still the building is among the best known in the city, even to people who have never been to New York.
 """
-
 
 """
 from summarizer import Summarizer

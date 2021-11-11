@@ -82,23 +82,21 @@ def _score_sentences(sentences, freqTable) -> dict:
         if sentence[:10] in sentenceValue:
             sentenceValue[sentence[:10]] = sentenceValue[sentence[:10]] / word_count_in_sentence_except_stop_words
 
-        '''
-        Notice that a potential issue with our score algorithm is that long sentences will have an advantage over short sentences. 
-        To solve this, we're dividing every sentence score by the number of words in the sentence.
+        '''Notice that a potential issue with our score algorithm is that long sentences will have an advantage over 
+        short sentences. To solve this, we're dividing every sentence score by the number of words in the sentence. 
         
-        Note that here sentence[:10] is the first 10 character of any sentence, this is to save memory while saving keys of
-        the dictionary.
-        '''
+        Note that here sentence[:10] is the first 10 character of any sentence, this is to save memory while saving 
+        keys of the dictionary. '''
 
     return sentenceValue
 
 
-def _find_average_score(sentenceValue) -> int:
+def _find_average_score(sentenceValue) -> float:
     """
     Find the average score from the sentence value dictionary
     :rtype: int
     """
-    sumValues = 0
+    sumValues: int = 0
     for entry in sentenceValue:
         sumValues += sentenceValue[entry]
 

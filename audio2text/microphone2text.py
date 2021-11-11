@@ -3,8 +3,8 @@ import ConfigParser
 
 cf = ConfigParser.ConfigParser()
 cf.read('config.py')
-api_key=cf.get('speech', 'API_KEY')
-print (api_key)
+api_key = cf.get('speech', 'API_KEY')
+print(api_key)
 # obtain audio from the microphone
 r = sr.Recognizer()
 with sr.Microphone() as source:
@@ -20,4 +20,4 @@ try:
 except sr.UnknownValueError:
     print("Google Speech Recognition could not understand audio")
 except sr.RequestError as e:
-    print("Could not request results from Google Speech Recognition service; {0}".format(e))(url)
+    print("Could not request results from Google Speech Recognition service; {0}".format(e))

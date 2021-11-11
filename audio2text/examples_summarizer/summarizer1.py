@@ -1,5 +1,4 @@
 
-
 # https://www.youtube.com/watch?v=TsfLm5iiYb4
 # https://github.com/nicknochnack/Hugging-Face-Transformers-Summarization/blob/main/Summarization.ipynb
 
@@ -7,14 +6,14 @@
 # pip3 install tensorflow
 # pip3 install nltk
 
-#from transformers import pipeline
-#summarizer = pipeline("summarization")
+# from transformers import pipeline
+# summarizer = pipeline("summarization")
 
 ARTICLE = """
 find the conversation Sam Harris what are the most influential and pioneering thinkers of our time he's a host of The Making Sense podcast and the author of many similar books and human nature and the human mind including the end of Faith the moral landscape lying free will and waking up he also has a meditation app called waking up and I've been using to guide my own meditation could mention of our sponsors national instruments belcampo athlet. 
 """
 
-#summarizer(ARTICLE, max_length=100, min_length=30, do_sample=False)
+# summarizer(ARTICLE, max_length=100, min_length=30, do_sample=False)
 
 """
 untimeError: At least one of TensorFlow 2.0 or PyTorch should be installed. 
